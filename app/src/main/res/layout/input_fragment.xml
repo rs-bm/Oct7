@@ -11,8 +11,8 @@
         android:id="@+id/enter_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="69dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
         android:text="@string/enter_task"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,17 +32,18 @@
         android:id="@+id/enter_task_et"
         android:layout_width="84dp"
         android:layout_height="50dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="-10dp"
         android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/enter_task"
         app:layout_constraintTop_toTopOf="@+id/enter_task"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="184dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/who_did_it_et"
         android:layout_width="84dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="@+id/enter_task_et"
         app:layout_constraintTop_toBottomOf="@+id/enter_task_et"
@@ -52,7 +53,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="32dp"
         android:text="Button"
         app:layout_constraintStart_toEndOf="@+id/who_did_it_et"
         app:layout_constraintTop_toBottomOf="@+id/enter_task_et" />

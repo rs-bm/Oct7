@@ -17,7 +17,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/listFragment"
-        android:name="com.example.oct7.InputFragment"
+        android:name="com.example.oct7.ListFragment"
         android:layout_width="fill_parent"
         android:layout_height="500dp"
         app:layout_constraintStart_toStartOf="parent"

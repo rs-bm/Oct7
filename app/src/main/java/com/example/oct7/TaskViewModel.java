@@ -16,18 +16,18 @@ public class TaskViewModel extends ViewModel {
         taskLL.setValue(l);
     }
 
-//    public void setColors(LinkedList<String> l) {
-//        colorsLL.setValue(l);
-//    }
-//
-//    public MutableLiveData<LinkedList<String>> getColors() {
-//        return colorsLL;
-//    }
-//
-//    public void addColor(String c) {
-//        LinkedList<String> l = getColors().getValue();
-//        l.add(c);
-//        Log.i("COLORS", l.toString());
-//        colorsLL.setValue(l);
-//    }
+    public void setTasks(LinkedList<String> l) {
+        taskLL.setValue(l);
+    }
+
+    public MutableLiveData<LinkedList<String>> getTasks() {
+        return taskLL;
+    }
+
+    public void addTask(String c) {
+        LinkedList<String> l = getTasks().getValue();
+        l.add(c);
+        Log.i("COLORS", l.toString());
+        taskLL.setValue(l);
+    }
 }
